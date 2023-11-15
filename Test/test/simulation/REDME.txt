@@ -1,0 +1,7 @@
+'0x16' - Reset system
+'0x28' - Low speed off
+'0x4' - Low speed on
+'0xC0' - Save new settings
+'0x8' - Hight speed on
+'0x50' - Hight speed off
+'0x32' - Get DEFAULT settings

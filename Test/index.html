@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang=ru>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href=# type=image/x-icon>
+<title>Document</title>
+<link rel=stylesheet href=style.css>
+<style></style>
+</head>
+<body>
+<div class=container>
+<div class=header><h1>Controller dashboard</h1></div>
+<div class=section-group>
+<div class=section>
+<h2 class="label main-label">&nbspOnline value</h2>
+<div class=section-item>
+<div class=item-element>
+<h3 class=label>&nbspEngine collant temp:&nbsp&nbsp<span class=label id=temp-value>NaN</span>&nbsp&degC</h3></div>
+<div class=item-element><h3 class=label>&nbspElectrical fan speed:&nbsp&nbsp<span class=label id=speed-value>NaN</span>&nbsp%</h3></div>
+<div class=item-element><h3 class=label>&nbspA/C low speed status:&nbsp&nbsp<span class=label id=low-speed-status>NaN</span></h3></div>
+<div class=item-element style=border-bottom:none><h3 class=label>&nbspA/C hight speed status:&nbsp&nbsp<span class=label id=hight-speed-status>NaN</span></h3></div>
+</div>
+</div>
+<div class=section>
+<h2 class="label main-label">&nbspManual switch</h2>
+<div class=section-item>
+<div class=item-element style=justify-content:space-around><h3 class=label>Low speed request</h3>
+<select name=low-speed-request id=low-speed-request autocomplete=off>
+<option value=ON>ON</option>
+<option value=OFF selected>OFF</option>
+</select></div>
+<div class=item-element style=justify-content:space-around><h3 class=label>Hight speed request</h3>
+<select name=hight-speed-request id=hight-speed-request>
+<option value=ON>ON</option>
+<option value=OFF selected>OFF</option>
+</select></div>
+<div class=item-element style=justify-content:start;padding-left:15px><h3 class=label>Errors:&nbsp<span class=label id=error_status>Not connection</span></h3></div>
+<div class=item-element style=justify-content:center;border-bottom:none><button value=0x16>Reset</button></div>
+</div>
+</div>
+<div class=section style=margin-bottom:60px>
+<h2 class="label main-label">&nbspSettings</h2>
+<div class=section-item>
+<div class=item-element style=justify-content:space-around>
+<label for=low-speed-value class=label>A/C low speed in %</label>
+<input type=tel id=low-speed-value value=NaN>
+</div>
+<div class=item-element style=justify-content:space-around>
+<label for=low-speed-value class=label>A/C hight speed in %</label>
+<input type=tel id=hight-speed-value value=NaN>
+</div>
+<div class=item-element style=justify-content:space-around>
+<label for=setpoint-value class=label>Setpoint temp in &degC</label>
+<input type=tel id=setpont-value value=NaN>
+</div>
+<div class=item-element id=button-group style=border-bottom:none>
+<button id=save_btn value=0xC0>Save change</button>
+<button value=0x32>Defaul</button>
+</div>
+</div>
+</div>
+</div>
+<div class=section-group></div>
+</div>
+</body>
+<script src="index.js" ></script>
+</html>
